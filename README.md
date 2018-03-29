@@ -7,6 +7,7 @@ Header-only C++ library for hooking functions on Windows x64. Supports inline an
 Include "function_hooks.h" in your project.
 
 Inlike hook example:
+
 ```C++
 #include <function_hooks.h>
 
