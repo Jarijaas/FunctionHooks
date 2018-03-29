@@ -19,8 +19,8 @@ void Hook(fn_hooks::Registers regs) {
 int main() {
 
   // To hook
-  const size_t epilog_size = 0x1A;
-  fn_hooks::InlineHook(function_ptr, Hook, epilog_size);
+  const size_t byte_count = 13; // How many bytes to copy to end of the hook from start of the function
+  fn_hooks::InlineHook(function_ptr, Hook, byte_count);
 
   // To unhook
   fn_hooks::Unhook(function_ptr);
